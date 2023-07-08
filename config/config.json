@@ -1,0 +1,29 @@
+{
+  "production": {
+    "username": "ubuntu",
+    "password": "desi@14vedesi#",
+    "database": "indice_dev",
+    "host": "18.182.219.27",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false
+  },
+  "development": {
+    "username": "ubuntu",
+    "password": "desi@14vedesi#",
+    "database": "indice_dev_development",
+    "host": "18.182.219.27",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": true
+  },
+  "test": {
+    "username": "postgres",
+    "password": "2580",
+    "database": "indice_dev_development",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": true
+  }
+}
