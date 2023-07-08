@@ -62,6 +62,13 @@ global.appRoot = path.resolve(__dirname);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use("/", (req, res, next) => {
+  return res.status(200).json({
+    stateCode: 200,
+    msg: "Welcome to classified !",
+  });
+});
+
 /** project routes */
 app.use("/api", [
   userRoutes,
